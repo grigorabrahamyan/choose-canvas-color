@@ -1,0 +1,110 @@
+.app {
+  height: 100%;
+  position: relative;
+}
+
+.headerWrapper {
+  width: 100%;
+  background-color: #edf0ee;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  max-width: 1200px;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.colorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.colorRect {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.inputFile input {
+  display: none;
+}
+
+.customFileUpload {
+  text-align: center;
+  width: 150px;
+  height: 35px;
+  border: 1px solid grey;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: transparent;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.customFileUpload:hover {
+  background-color: #2ee59d;
+  color: white;
+  transform: scale(1.1);
+}
+
+.headerButton {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid grey;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.headerButton.active {
+  background-color: #2ee59d;
+}
+
+.headerButton:hover {
+  background-color: #2ee59d;
+  transform: scale(1.1);
+}
+
+.headerButton:hover svg path,
+.headerButton.active svg path {
+  fill: white;
+}
+
+.headerButton svg {
+  width: 100%;
+  height: 100%;
+}
+
+.headerButton svg path {
+  fill: grey;
+}
+
+.canvasWrapper {
+  max-width: 1200px;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-top: unset;
+  border-bottom: unset;
+  padding-top: 70px;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+}
